@@ -1,0 +1,60 @@
+//Relevantes
+-Usuario Logeado, Generar Itinerario
+-Apartado De Comentarios en los lugares
+
+-Dividir lugares por municipios -> Torreon,Gomez, Lerdo
+-Agregar lugares cercanos (Puente de ojuela, la concha, ...)
+
+-Historia
+
+-Apartado de Hoteles
+-Lugares(museos, restaurantes, monumentos)
+-Gastronomia
+
+-Buscador en el navbar
+
+-Eventos
+
+//Ideas mas complejas que alomejor no metemos porque estaria bien dificil xD
+-Generar mapa donde poder seleccionar lugares a los cuales se puede visitar
+
+PANTALLAS
+//Importantes
+*Login
+*Registro
+*Perfil (DatosUsuario,CambioContra,Itinerario)
+*NavBar (Inicio,Conocenos,Historia,Eventos,Registro,Login-Perfil-CerrarSesion,--Buscador--)
+*Footer (Link Paginas de los estados,Algunas cosas que nose todavia xD)
+*Principal (Navbar,Banner (Descripcion de la laguna),Seccion por municipios en cards,Gastronomia,Lugares en Cards,Footer)
+
+//Masomenos Importantes
+*PageMunicipios (Pagina donde se traera todos tanto lugares,gastronomia, etc de el municipio elegido)
+*PageGastronomia (Cards Con todas las comidas que hay en la region lagunera)
+*PageLugares (Pagina donde se traera todos los lugares de un Tipo en especifico (Restaurant,Museo,etc))
+
+------------------------------------------------------------------------------------------------------------------
+//Menos Importantes
+*Conocenos (Descripcion de los integrantes y propocito de la page)
+*Hoteles (Pagina donde se veran los hoteles de toda la region lagunera)
+*PageLugarEspecifico (Descripcion y direccion de el lugar)
+*PageGastronomiaEspecifico (Descripcion y direccion de el platillo)
+*Eventos
+*Historia
+***Buscador (Pagina donde nos mandara el buscador)
+
+
+
+TABLAS DATABASE
+	->Cuenta
+	->Usuario
+	->Lugares (lugar,Tipo_Lugar,)
+	->Gastronomia
+	->Direcciones
+
+	->Comentarios
+	->SugerenciasPage
+
+	->Eventos(lugar,fecha_inicio,fecha_fin)
+	->Hoteles
+	->Itinerario
+	

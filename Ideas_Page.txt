@@ -20,12 +20,12 @@
 
 PANTALLAS
 //Importantes
-*Login
-*Registro
+***Login
+***Registro
 *Perfil (DatosUsuario,CambioContra,Itinerario)
-*NavBar (Inicio,Conocenos,Historia,Eventos,Registro,Login-Perfil-CerrarSesion,--Buscador--)
-*Footer (Link Paginas de los estados,Algunas cosas que nose todavia xD)
-*Principal (Navbar,Banner (Descripcion de la laguna),Seccion por municipios en cards,Gastronomia,Lugares en Cards,Footer)
+****NavBar (Inicio,Conocenos,Historia,Eventos,Registro,Login-Perfil-CerrarSesion,--Buscador--)
+****Footer (Link Paginas de los estados,Algunas cosas que nose todavia xD)
+****Principal (Navbar,Banner (Descripcion de la laguna),Seccion por municipios en cards,Gastronomia,Lugares en Cards,Footer)
 
 //Masomenos Importantes
 *PageMunicipios (Pagina donde se traera todos tanto lugares,gastronomia, etc de el municipio elegido)

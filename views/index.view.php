@@ -31,32 +31,40 @@
 
         <div class="municipio-container">
             <div class="card bg-dark text-white municipio">
-                <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Torreon</h5>
-                    <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+                <a href="municipios.php" style="padding: 0px;">
+                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Torreon</h5>
+                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </a>
             </div>
             <div class="card bg-dark text-white municipio">
-                <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Torreon</h5>
-                    <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+                <a href="municipios.php" style="padding: 0px;">
+                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Torreon</h5>
+                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </a>
             </div>
             <div class="card bg-dark text-white municipio">
-                <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Torreon</h5>
-                    <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+                <a href="municipios.php" style="padding: 0px;">
+                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Torreon</h5>
+                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </a>
             </div>
             <div class="card bg-dark text-white municipio">
-                <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Torreon</h5>
-                    <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+                <a href="municipios.php" style="padding: 0px;">
+                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Torreon</h5>
+                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -71,20 +79,24 @@
                 </div>
                 
                 <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                    <img src="img/museoAvion.jpg" class="card-img imgLugar" alt="museo">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Museos</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    <a href="lugares.php" style="padding: 0px;">
+                        <img src="img/museoAvion.jpg" class="card-img imgLugar" alt="museo">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Museos</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="lugar">
                 <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                    <img src="img/tsm.jpg" class="card-img imgLugar" alt="museo">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Estadios</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                <a href="lugares.php" style="padding: 0px;">
+                        <img src="img/tsm.jpg" class="card-img imgLugar" alt="museo">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Museos</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="clearfix-lugarleft" style="width: 40%;">
                 </div>
@@ -94,20 +106,24 @@
                 </div>
                 
                 <div class="card bg-dark text-white lugarRight" style="width: 60%;">
+                    <a href="lugares.php" style="padding: 0px;">
                     <img src="img/canalPerla.jpg" class="card-img imgLugar" alt="museo">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Monumentos</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Museos</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="lugar">
                 <div class="card bg-dark text-white lugarRight" style="width: 60%;">
+                    <a href="lugares.php" style="padding: 0px;">
                     <img src="img/museoAvion.jpg" class="card-img imgLugar" alt="museo">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Museos</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Museos</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="clearfix-lugarleft" style="width: 40%;">
                 </div>
@@ -120,15 +136,18 @@
         <h1>Conoce Nuestra Gastronomia</h1>
 
         <div class="card bg-dark text-white gastronomia-content">
-            <img src="img/reliquia.jpeg" class="card-img" alt="gastronomia">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Gastronomia</h5>
-            </div>
+            <a href="gastronomia.php" style="padding: 0px;">
+                <img src="img/reliquia.jpeg" class="card-img" alt="gastronomia">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Gastronomia</h5>
+                </div>
+            </a>
         </div>
     </section>
 
     <?php require('footer.view.php');?>
 </body>
+<script src="js/index.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/03ad672f06.js" crossorigin="anonymous"></script>

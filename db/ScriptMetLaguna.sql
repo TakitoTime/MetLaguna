@@ -13,6 +13,7 @@ create table Usuario(id int auto_increment primary key,
                      apellidoMaterno varchar(50) not null,
                      telefono varchar(20),
                      edad int,
+                     ocupacion varchar(200) null,
                      foto text,
                      cuenta_id int,
                      foreign key (cuenta_id) references cuenta(id));
@@ -57,9 +58,11 @@ create table Foto(id int auto_increment primary key,
 				  lugar_id int null,
                   gastronomia_id int null,
                   municipio_id int null,
+                  nombre varchar(20),
 				  url text,
 				  descripcion varchar(200),
                   foreign key (lugar_id) references Lugar(id),
                   foreign key (gastronomia_id) references Gastronomia(id),
                   foreign key (municipio_id) references Municipio(id));
+           
 	

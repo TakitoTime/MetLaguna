@@ -1,0 +1,121 @@
+.contenedor{
+    display: block;
+    width: 100%;
+}
+    .banner{
+        width: 100%;
+        height: 300px;
+        background: url('../img/bannerLugares.jpg');
+        background-repeat: round;
+    }
+
+    .banner h1{
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding-top: 120px;
+    }
+
+    .bodyLugares{
+        width: 90%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+        .lugares{
+            width: 65%;
+        }
+            .lugares h3{
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            .lugaresContainer{
+                background: #1b1b1f;
+                padding: 20px;
+            }
+                .imageCard{
+                    width: 100%;
+                    height: 184px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+
+                .lugarCard{
+                    margin-bottom: 20px;
+                }
+                    .button{
+                        display: flex;
+                    }
+
+                        .viewMore a{
+                            display: block;
+                            text-align: center;
+                            padding: 10px;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            color:white;
+                            background: #1089ff;
+                            cursor: pointer;
+                            font-weight: 700;
+                        }
+
+                        .viewMore a:hover{
+                            color: white;
+                            background: #212529;
+                        }
+
+
+        .gastronomia{
+            width: 30%;
+        }
+
+            .gastronomia h4{
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            .gastronomiaContainer{
+                background: #1b1b1f;
+                padding: 10px;
+            }
+                .imageCardPlatillo{
+                    width: 100%;
+                    height: 130px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+
+                .platilloCard{
+                    margin-bottom: 10px;
+                }
+                    .platilloCard .platilloContainer{
+                        padding: 10px;
+                    }
+                    .platilloCard h5{
+                        margin-bottom: 5px;
+                    }
+                    .platilloCard p{
+                        font-size: 14px;
+                        text-align: justify;
+                        margin-bottom: 5px;
+                    }
+                      .platilloCard .button{
+                          display: flex;
+                      }
+                          .platilloCard .button .viewMore a{
+                              display: block;
+                              text-align: center;
+                              padding: 5px;
+                              color:white;
+                              background: #1089ff;
+                              cursor: pointer;
+                              font-weight: 700;
+                          }
+                          .platilloCard .button .viewMore a:hover{
+                              color: white;
+                              background: #212529;
+                          }

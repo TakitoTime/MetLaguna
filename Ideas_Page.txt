@@ -20,9 +20,9 @@
 
 PANTALLAS
 //Importantes
-***Login
-***Registro
-*Perfil (DatosUsuario,CambioContra,Itinerario)
+****Login
+****Registro
+****Perfil (DatosUsuario,CambioContra,Itinerario)
 ****NavBar (Inicio,Conocenos,Historia,Eventos,Registro,Login-Perfil-CerrarSesion,--Buscador--)
 ****Footer (Link Paginas de los estados,Algunas cosas que nose todavia xD)
 ****Principal (Navbar,Banner (Descripcion de la laguna),Seccion por municipios en cards,Gastronomia,Lugares en Cards,Footer)
@@ -36,7 +36,7 @@ PANTALLAS
 //Menos Importantes
 *Conocenos (Descripcion de los integrantes y propocito de la page)
 *Hoteles (Pagina donde se veran los hoteles de toda la region lagunera)
-*PageLugarEspecifico (Descripcion y direccion de el lugar)
+*PageLugarEspecifico (Descripcion y direccion de el lugar, Agregar ubicacion de google maps) 
 *PageGastronomiaEspecifico (Descripcion y direccion de el platillo)
 *Eventos
 *Historia

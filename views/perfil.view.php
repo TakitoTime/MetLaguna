@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/index.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/perfil.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/footer.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modalPassword.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modalUser.css" crossorigin="anonymous">    
 </head>
 <body>
     <?php require('navBar.view.php');?>
@@ -34,12 +36,12 @@
                     <h5><i class="fas fa-phone-alt"></i> 8713975574</h5>
                 </div>
                 <div class="button">
-                    <a href="#">Cambiar Contraseña</a>
+                    <a href="#modalPassword" rel="modal:open">Cambiar Contraseña</a>
                 </div>
             </div>
             
             <div class="img" style="display: flex;">
-                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#modalUser" rel="modal:open"><i class="fas fa-user"></i></a>
             </div>
         </div>
 
@@ -56,9 +58,16 @@
         </div>
 
     </section>
+    <?php require('modalPassword.view.php');?>
+    <?php require('modalUser.view.php');?>
     <?php require('footer.view.php');?>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/6a68a5567b.js" crossorigin="anonymous"></script>
+<script src="js/perfil.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 </html>

@@ -14,12 +14,19 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Eventos</a>
       </li>
-      <?php if(isset($_SESSION['usuario'])): ?>
+      <?php if(isset($_SESSION['usuario_id'])): ?>
         <li class="nav-item">
-            <a class="nav-link" href="#">Perfil</a>
+          <a class="nav-link" href="formularioRegistro.php">Cuenta</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Cerrar Sesion</a>
+            <a class="nav-link" href="logout.php">Cerrar Sesion</a>
+        </li>
+      <?php elseif(isset($_SESSION['usuario'])): ?>
+        <li class="nav-item">
+            <a class="nav-link" href="perfil.php">Perfil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="logout.php">Cerrar Sesion</a>
         </li>
       <?php else: ?>    
         <li class="nav-item">

@@ -4,32 +4,26 @@
 }
 
 .cardRegister{
-    width: 80%;
+    width: 75%;
+    background: url('../img/imageLogin.jpg');
+    background-position: center;
+    background-size: cover;
     margin: auto;
-    display: flex;
-    background: #fff;
+    display: block;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding:40px;
 
     -webkit-box-shadow: inset 17px -20px 48px -16px rgba(0,0,0,0.33);
     -moz-box-shadow: inset 17px -20px 48px -16px rgba(0,0,0,0.33);
     box-shadow: inset 17px -20px 48px -16px rgba(0,0,0,0.33);       
 }
 
-.img{
-    width: 50%;
-    background: url('../img/imageLogin.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-/*.img img{
-    width: 100%;
-    height: 200px;
-}*/
-
 .form-registro{
-    width: 50%;
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+    background:white;
 }
 
 .icon{
@@ -40,14 +34,24 @@
     font-size: 60px;
 }
 
-.form-registro h2{
+.form-registro h3{
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .form{
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contenedorIzquierdo{
+    width: 48%;
+}
+.contenedorDerecho{
+    width:48%;
 }
 
 .form-registro form{
@@ -58,16 +62,17 @@
 }
 
 .form-registro form input{
-    width: 70%;
+    width: 100%;
     display: block;
     padding: 10px 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin:auto;
+    overflow: hidden;
 }
 
 .form-registro form ul{
-    width: 70%;
+    width: 100%;
     display: block;
     padding: 10px 5px;
     border-radius: 5px;
@@ -83,7 +88,7 @@
 }
 
 .form-registro form input[type=submit]{
-    width: 70%;
+    width: 50%;
     border-radius: 5px;
     border: none;
     padding: 10px;

@@ -25,14 +25,22 @@
                 <h2>Iniciar Sesion</h2>
 
                 <div class="form">
-                    <form action="" method="">
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     
                         <input type="email" name="email" placeholder="Correo..." id="email">
                         <ul id="errorEmail"></ul>
                         <input type="password" name="password" placeholder="Contraseña..." id="password">
                         <ul id="errorPassword"></ul>
  
-                        <button type="button" onclick="validarSesion()">Registrar</button>
+                        <input type="submit" onclick="return validarSesion()" value="Ingresar">
+
+                        <?php if(!empty($errores)): ?>
+                            <div class="error">
+                                <ul>
+                                    <?php echo $errores; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
                     </form>
                 </div>
             </div>

@@ -25,7 +25,7 @@
                 <h2>Registrate Ahora!</h2>
 
                 <div class="form">
-                    <form action="" method="POST">
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     
                         <input type="email" name="email" placeholder="Correo..." id="email">
                         <ul id="errorEmail"></ul>
@@ -34,7 +34,15 @@
                         <input type="password" name="password2" placeholder="Repite Tu Contraseña..." id="password2">
                         <ul id="errorPassword2"></ul>
 
-                        <button type="button" onclick="validarRegistro()">Registrar</button>
+                        <input type="submit" onclick="return validarRegistro()" value="Registrar">
+
+                        <?php if(!empty($errores)): ?>
+                            <div class="error">
+                                <ul>
+                                    <?php echo $errores; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
                     </form>
                 </div>
             </div>

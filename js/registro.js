@@ -21,34 +21,34 @@ function validarRegistro(){
     if(email == ""){
         errorEmail.innerHTML+="<li>Ingrese Email</li>";
         errorEmail.style.background="#f64e60";
-        flagValidate=false;
+        flagValidateEmail=false;
     }
     if(!regex.test(email)){
         errorEmail.innerHTML+="<li>Correo Invalido</li>";
         errorEmail.style.background="#f64e60";
-        flagValidate=false;
+        flagValidateEmail=false;
     }
 
     if(password == ""){
         errorPassword.innerHTML+="<li>Ingrese Contraseña</li>";
         errorPassword.style.background2="#f64e60";
-        flagValidate=false;
+        flagValidatePassword=false;
     }
     if(password.length <8){
         errorPassword.innerHTML+="<li>Minimo 8 Caracteres</li>";
         errorPassword.style.background="#f64e60";
-        flagValidate=false;
+        flagValidatePassword=false;
     }
 
     if(password2 == ""){
         errorPassword2.innerHTML+="<li>Ingrese Contraseña</li>";
         errorPassword2.style.background2="#f64e60";
-        flagValidate=false;
+        flagValidatePassword2=false;
     }
     if(password2.length <8){
         errorPassword2.innerHTML+="<li>Minimo 8 Caracteres</li>";
         errorPassword2.style.background="#f64e60";
-        flagValidate=false;
+        flagValidatePassword2=false;
     }
 
     if(password != password2){
@@ -68,6 +68,13 @@ function validarRegistro(){
     }
     if(flagValidatePassword2){
         errorPassword2.style.background="#fff";
+    }
+
+    if(flagValidateEmail && flagValidatePassword && flagValidatePassword2){
+        return true;
+    }
+    else{
+        return false;
     }
 
 }

@@ -169,5 +169,12 @@ function validarDatosUsuario(){
     if(flagValidateFoto){
         errorFoto.style.background="#fff";
     }
+
+    if(flagValidateNombre && flagValidateNombreUsuario && flagValidatePaterno && flagValidateMaterno && flagValidateTelefono && flagValidateEdad && flagValidateOcupacion && flagValidateFoto){
+        return true;
+    }
+    else{
+        return false;
+    }
     
 }

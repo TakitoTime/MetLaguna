@@ -1,7 +1,8 @@
 
 function validarSesion(){
 
-    var flagValidate=true;
+    var flagValidateEmail=true;
+    var flagValidatePassword=true;
     var email=document.getElementById('email').value;
     var password=document.getElementById('password').value;
 
@@ -16,27 +17,36 @@ function validarSesion(){
     if(email == ""){
         errorEmail.innerHTML+="<li>Ingrese Email</li>";
         errorEmail.style.background="#f64e60";
-        flagValidate=false;
+        flagValidateEmail=false;
     }
     if(!regex.test(email)){
         errorEmail.innerHTML+="<li>Correo Invalido</li>";
         errorEmail.style.background="#f64e60";
-        flagValidate=false;
+        flagValidateEmail=false;
     }
 
     if(password == ""){
         errorPassword.innerHTML+="<li>Ingrese Contraseña</li>";
         errorPassword.style.background2="#f64e60";
-        flagValidate=false;
+        flagValidatePassword=false;    
     }
     if(password.length <8){
         errorPassword.innerHTML+="<li>Minimo 8 Caracteres</li>";
         errorPassword.style.background="#f64e60";
-        flagValidate=false;
+        flagValidatePassword=false;    
     }
 
-    if(flagValidate){
+    if(flagValidateEmail){
+        errorEmail.style.background="#fff";
+    }
+    if(flagValidatePassword){
         errorPassword.style.background="#fff";
-        errorPassword2.style.background="#fff";
+    }
+
+    if(flagValidateEmail && flagValidatePassword){
+        return true;
+    }
+    else{
+        return false;
     }
 }

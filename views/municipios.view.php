@@ -14,7 +14,7 @@
 
     <section class="contenedor">
         <div class="banner">
-            <h1>Gomez Palacio</h1>
+            <h1><?php echo $municipio['nombre']?></h1>
         </div>
 
         <div class="lugares">

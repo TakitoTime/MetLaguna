@@ -1,3 +1,8 @@
+var abrir_modal=document.getElementById("modalactive");
+
+if(abrir_modal.dataset.value=="true"){
+    $('#modalUser').modal('show');
+}
 
 function validarPasswords(){
 

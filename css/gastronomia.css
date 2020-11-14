@@ -119,3 +119,18 @@
                               color: white;
                               background: #212529;
                           }
+            
+            .paginacion{
+                text-align: center;
+                color: white;
+                
+            }
+
+                .paginacion ul{
+                    text-decoration: none;
+                }
+
+                    .paginacion ul li{
+                        background: #1089ff;
+                        list-style: none;
+                    }

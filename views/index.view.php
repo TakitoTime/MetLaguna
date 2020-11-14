@@ -30,44 +30,27 @@
         <h1>Explora Sus Municipios</h1>
 
         <div class="municipio-container">
-            <div class="card bg-dark text-white municipio">
-                <a href="municipios.php" style="padding: 0px;">
-                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Torreon</h5>
-                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card bg-dark text-white municipio">
-                <a href="municipios.php" style="padding: 0px;">
-                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Torreon</h5>
-                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card bg-dark text-white municipio">
-                <a href="municipios.php" style="padding: 0px;">
-                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Torreon</h5>
-                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="card bg-dark text-white municipio">
-                <a href="municipios.php" style="padding: 0px;">
-                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Torreon</h5>
-                        <p class="card-text" style="text-align: justify;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php foreach($municipios as $municipio){
 
+        $id=$municipio['id'];
+        $nombre=$municipio['nombre'];
+        $descripcion=$municipio['descripcion'];
+
+        ?>
+            <div class="card bg-dark text-white municipio">
+                <a href="municipios.php?id=<?php echo $id?>" style="padding: 0px;">
+                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title"><?php echo $nombre?></h5>
+                        <p class="card-text" style="text-align: justify;"><?php echo utf8_encode($descripcion)?></p>
+                    </div>
+                </a>
+            </div>
+
+        <?php 
+        }
+        ?>
+        </div>
     </section>
 
     <section class="lugares">

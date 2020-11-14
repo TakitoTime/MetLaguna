@@ -2,6 +2,7 @@
     display: block;
     margin: auto;
     width:auto;
+    max-width: 60%;
     height: auto;
     padding:0px;
 }
@@ -24,9 +25,11 @@
         margin-bottom: 15px;
     }
         .contenedorIzquierdo{
+            width: 48%;
         }
 
         .contenedorDerecho{
+            width: 48%;
         }
 
         .modal .formUser input{
@@ -36,6 +39,16 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             margin: auto;
+        }
+
+        .modal .formUser input[type="file"]{
+            width: 100%;
+            display: block;
+            padding: 5px 40px 5px 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: auto;
+            overflow: hidden;
         }
 
         .modal .formUser ul{

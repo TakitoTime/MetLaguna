@@ -23,17 +23,17 @@
             <div class="info">
                 <div class="name-age"> 
                     <div class="name">
-                        <h3>David Pulido Valdez</h3>
-                        <h2>Estudiante Del Tec Lerdo y Practicante</h2>
+                        <h3><?php echo $nombre;?></h3>
+                        <h2><?php echo $usuario['ocupacion']?></h2>
                     </div>  
                     <div class="age">
-                        <h3>23 Años</h3>         
+                        <h3><?php echo $usuario['edad']?> Años</h3>         
                    </div>
                 </div>
                 <div class="contact">
-                    <h5><i class="fas fa-user"></i> TakitoTime</h5>
-                    <h5><i class="fas fa-envelope-open-text"></i> sillapone@gmail.com</h5>
-                    <h5><i class="fas fa-phone-alt"></i> 8713975574</h5>
+                    <h5><i class="fas fa-user"></i> <?php echo $usuario['nombreUsuario']?></h5>
+                    <h5><i class="fas fa-envelope-open-text"></i> <?php echo $_SESSION['usuario']?></h5>
+                    <h5><i class="fas fa-phone-alt"></i> <?php echo $usuario['telefono']?></h5>
                 </div>
                 <div class="button">
                     <a href="#modalPassword" rel="modal:open">Cambiar Contraseña</a>
@@ -41,7 +41,7 @@
             </div>
             
             <div class="img" style="display: flex;">
-                <a href="#modalUser" rel="modal:open"><i class="fas fa-user"></i></a>
+                <a href="#modalUser" rel="modal:open" id="modalactive" data-value="<?php echo $abrir_modal;?>"><i class="fas fa-user"></i></a>
             </div>
         </div>
 
@@ -58,16 +58,15 @@
         </div>
 
     </section>
-    <?php require('modalPassword.view.php');?>
-    <?php require('modalUser.view.php');?>
     <?php require('footer.view.php');?>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/6a68a5567b.js" crossorigin="anonymous"></script>
-<script src="js/perfil.js" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script src="js/perfil.js" crossorigin="anonymous"></script>
 
 </html>

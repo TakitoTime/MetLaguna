@@ -2,6 +2,9 @@
 
     require('conexion.php');
 
+    $pageActive='perfil';
+
+
     if(!isset($_SESSION['usuario'])){
         header('Location: registro.php');
     }
@@ -19,34 +22,34 @@
         
             $usuario = $statement->fetch();
         
-            $nombre = $usuario['nombres']." ".$usuario['apellidoPaterno']." ".$usuario['apellidoMaterno'];
+            $nombreCompleto = $usuario['nombres']." ".$usuario['apellidoPaterno']." ".$usuario['apellidoMaterno'];
         
             if(isset($_POST['actualizarUsuario'])){
         
-                $id = trim($_POST["usuarioId"]);
+                $id = trim($_POST['usuarioId']);
                 $id = filter_var($id, FILTER_SANITIZE_STRING);
-        
-                $nombre = trim($_POST["nombre"]);
+
+                $nombre = trim($_POST['nombre']);
                 $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-        
-                $nombreUsuario = trim($_POST["nombreUsuario"]);
+
+                $nombreUsuario = trim($_POST['nombreUsuario']);
                 $nombreUsuario = filter_var($nombreUsuario, FILTER_SANITIZE_STRING);
         
-                $paterno = trim($_POST["paterno"]);
+                $paterno = trim($_POST['paterno']);
                 $paterno = filter_var($paterno, FILTER_SANITIZE_STRING);
-                
-                $materno = trim($_POST["materno"]);
+                           
+                $materno = trim($_POST['materno']);
                 $materno = filter_var($materno, FILTER_SANITIZE_STRING);
-        
-                $telefono = trim($_POST["telefono"]);
+                   
+                $telefono = trim($_POST['telefono']);
                 $telefono = filter_var($telefono, FILTER_SANITIZE_STRING);
-        
-                $edad = trim($_POST["edad"]);
+                    
+                $edad = trim($_POST['edad']);
                 $edad = filter_var($edad, FILTER_SANITIZE_STRING);
-        
-                $ocupacion = trim($_POST["ocupacion"]);
+                
+                $ocupacion = trim($_POST['ocupacion']);
                 $ocupacion = filter_var($ocupacion, FILTER_SANITIZE_STRING);
-        
+   
                 $target_path="img/userPhoto/";
                 $target_path=$target_path . basename( $_FILES['foto']['name']);
                 if(move_uploaded_file($_FILES['foto']['tmp_name'],$target_path)){
@@ -63,10 +66,8 @@
                 ));
         
                 $resultado = $statement->fetch();
-        
-                echo $id;
 
-                if($resultado !=[]){
+                if($resultado == [] || $resultado['nombreUsuario'] == $nombreUsuario){
                     
                     $statement = $conexion->prepare('UPDATE usuario SET nombres = :nombres, 
                                                                     apellidoPaterno = :paterno, 
@@ -75,7 +76,7 @@
                                                                     telefono = :telefono,
                                                                     edad = :edad,
                                                                     ocupacion = :ocupacion,
-                                                                    foto = :foto,
+                                                                    foto = :foto
                                                                     WHERE id = :id');
                 
                 

@@ -2,6 +2,8 @@
 
     require('conexion.php');
 
+    $pageActive='';
+
     $statement = $conexion->prepare('SELECT * FROM comidatipica');
     $statement->execute();
 

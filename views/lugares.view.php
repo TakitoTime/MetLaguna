@@ -21,7 +21,7 @@
 
         <section class="bodyLugares">
             <div class="lugares">
-                <h3>Museos</h3>
+                <h3><?php echo $nombre?></h3>
                 <div class="lugaresContainer">
                     <div class="card lugarCard">
                         <div class="row no-gutters">

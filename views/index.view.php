@@ -35,11 +35,12 @@
         $id=$municipio['id'];
         $nombre=$municipio['nombre'];
         $descripcion=$municipio['descripcion'];
+        $url=$municipio['url'];
 
         ?>
             <div class="card bg-dark text-white municipio">
                 <a href="municipios.php?id=<?php echo $id?>" style="padding: 0px;">
-                    <img src="img/puertaTorreon.jpg" class="card-img imgMunicipio" alt="torreon">
+                    <img src="<?php echo $url?>" class="card-img imgMunicipio" alt="torreon">
                     <div class="card-img-overlay">
                         <h5 class="card-title"><?php echo $nombre?></h5>
                         <p class="card-text" style="text-align: justify;"><?php echo utf8_encode($descripcion)?></p>
@@ -57,61 +58,57 @@
         <h1>Visita sus Calles y Lugares</h1>
 
         <div class="lugares-container" >
-            <div class="lugar">
-                <div class="clearfix-lugarleft" style="width: 40%;">
-                </div>
-                
-                <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                    <a href="lugares.php" style="padding: 0px;">
-                        <img src="img/museoAvion.jpg" class="card-img imgLugar" alt="museo">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Museos</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <?php 
+            $cont=1;
+            foreach($tipoLugares as $tipoLugar){
+                    
+                $id=$tipoLugar['id'];
+                $nombre=$tipoLugar['nombre'];
+                $descripcion=$tipoLugar['descripcion'];
+                $url=$tipoLugar['url'];
+
+                if($cont%2 == 0){
+
+                ?>
+                    <div class="lugar">
+                        <div class="clearfix-lugarleft" style="width: 40%;">
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="lugar">
-                <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                <a href="lugares.php" style="padding: 0px;">
-                        <img src="img/tsm.jpg" class="card-img imgLugar" alt="museo">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Museos</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                        <div class="card bg-dark text-white lugarRight" style="width: 60%;">
+                            <a href="lugares.php?id=<?php echo $id?>&nombre=<?php echo $nombre?>" style="padding: 0px;">
+                                <img src="<?php echo $url?>" class="card-img imgLugar" alt="museo">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title"><?php echo $nombre?></h5>
+                                    <p class="card-text"><?php echo $descripcion?></p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="clearfix-lugarleft" style="width: 40%;">
-                </div>
-            </div>
-            <div class="lugar">
-                <div class="clearfix-lugarleft" style="width: 40%;">
-                </div>
-                
-                <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                    <a href="lugares.php" style="padding: 0px;">
-                    <img src="img/canalPerla.jpg" class="card-img imgLugar" alt="museo">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Museos</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+
+                <?php 
+                }
+                else{
+
+                ?>
+                    <div class="lugar">
+                        <div class="card bg-dark text-white lugarRight" style="width: 60%;">
+                            <a href="lugares.php?id=<?php echo $id?>&nombre=<?php echo $nombre?>" style="padding: 0px;">
+                                <img src="<?php echo $url?>" class="card-img imgLugar" alt="museo">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title"><?php echo $nombre?></h5>
+                                    <p class="card-text"><?php echo $descripcion?></p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="lugar">
-                <div class="card bg-dark text-white lugarRight" style="width: 60%;">
-                    <a href="lugares.php" style="padding: 0px;">
-                    <img src="img/museoAvion.jpg" class="card-img imgLugar" alt="museo">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Museos</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                        <div class="clearfix-lugarleft" style="width: 40%;">
                         </div>
-                    </a>
-                </div>
-                <div class="clearfix-lugarleft" style="width: 40%;">
-                </div>
-            </div>
-            
+                    </div>
+                <?php
+                }
+                $cont++;
+            }
+            ?>            
         </div>
     </section>
 
@@ -127,7 +124,6 @@
             </a>
         </div>
     </section>
-
     <?php require('footer.view.php');?>
 </body>
 <script src="js/index.js" crossorigin="anonymous"></script>

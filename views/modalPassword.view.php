@@ -15,7 +15,7 @@
             <?php if(!empty($errores)): ?>
                 <div class="error">
                     <ul>
-                        <?php echo $errores; ?>
+                        <?php echo $errores; $errores?>
                     </ul>
                 </div>
             <?php endif; ?>

@@ -23,7 +23,7 @@
             <div class="info">
                 <div class="name-age"> 
                     <div class="name">
-                        <h3><?php echo $nombre;?></h3>
+                        <h3><?php echo $nombreCompleto;?></h3>
                         <h2><?php echo $usuario['ocupacion']?></h2>
                     </div>  
                     <div class="age">

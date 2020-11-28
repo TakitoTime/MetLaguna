@@ -2,6 +2,8 @@
 
     require('conexion.php');
 
+    $pageActive='login';
+
     if (isset($_SESSION['usuario'])) {
         header('Location: index.php');
         die();

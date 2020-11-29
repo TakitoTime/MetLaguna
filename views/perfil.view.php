@@ -35,8 +35,9 @@
                     <h5><i class="fas fa-envelope-open-text"></i> <?php echo $_SESSION['usuario']?></h5>
                     <h5><i class="fas fa-phone-alt"></i> <?php echo $usuario['telefono']?></h5>
                 </div>
-                <div class="button">
+                <div class="button" style="display: flex;">
                     <a href="#modalPassword" rel="modal:open">Cambiar Contraseña</a>
+                    <a href="#modalDeleteUser" rel="modal:open">Eliminar Cuenta</a>
                 </div>
             </div>
             

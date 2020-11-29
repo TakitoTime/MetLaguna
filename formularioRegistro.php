@@ -1,6 +1,9 @@
 <?php session_start();
 
     require('conexion.php');
+    
+    $pageActive='';
+
 
     if(!isset($_SESSION['usuario'])){
         header('Location: index.php');   

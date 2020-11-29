@@ -106,13 +106,51 @@
             
             }
         
-            if(isset($_POST['actualizarPasswords'])){
+            if(isset($_POST['eliminarCuenta'])){
+
+                $password = trim($_POST['password']);
+                $password = filter_var($password, FILTER_SANITIZE_STRING);
+                $password = hash('sha512', $password);
                 
+                $statement = $conexion->prepare('SELECT * FROM cuenta WHERE password = :password and id=:id LIMIT 1');
+                $statement->execute(array(
+                    ':password' => $password,
+                    ':id' => $_SESSION['id'],
+                ));
+        
+                $resultado = $statement->fetch();
+
+                if($resultado == []){
+
+                    $errores.='<li>Contraseña Incorrecta</li>';
+
+                }else{
+                    $statement = $conexion->prepare('DELETE FROM usuario WHERE cuenta_id = :cuenta_id LIMIT 1');
+                    $statement->execute(array(
+                        ':cuenta_id' => $_SESSION['id']
+                    ));
+
+                    $resultado = $statement->fetch();
+
+                    $statement = $conexion->prepare('DELETE FROM cuenta WHERE password = :password and id=:id LIMIT 1');
+                    $statement->execute(array(
+                        ':password' => $password,
+                        ':id' => $_SESSION['id'],
+                    ));
+
+                    $resultado = $statement->fetch();
+
+                    require('logout.php');
+                    
+                    header("Location: index.php");
+
+                }
             }
         }
     }
 
     require('views/modalPassword.view.php');
     require('views/modalUser.view.php');
+    require('views/modalDeleteUser.view.php');
     require('views/perfil.view.php');   
 ?>

@@ -19,7 +19,7 @@
         $paterno=$_POST['paterno'];
         $materno=$_POST['materno'];
         $ocupacion=$_POST['ocupacion'];
-        $telfono=$_POST['telfono'];
+        $telefono=$_POST['telefono'];
         $edad=$_POST['edad'];
         $foto=$_POST['foto'];
 
@@ -48,6 +48,8 @@
 
         $resultado = $statement->fetch();
        
+        $_SESSION['validacion']=1;
+        
         header('Location: perfil.php');   
                 
         

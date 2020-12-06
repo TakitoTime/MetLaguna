@@ -82,9 +82,6 @@
         
         .img{
             width: 30%;
-            background: url('../img/user.jpg');
-            background-size: cover;
-            background-position: center;
         }
 
             .img a{

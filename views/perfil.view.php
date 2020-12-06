@@ -41,7 +41,7 @@
                 </div>
             </div>
             
-            <div class="img" style="display: flex;">
+            <div class="img" style="display:flex; background: url('<?php echo $usuario['foto']?>'); background-size: cover; background-position: center;">
                 <a href="#modalUser" rel="modal:open" id="modalactive" data-value="<?php echo $abrir_modal;?>"><i class="fas fa-user"></i></a>
             </div>
         </div>

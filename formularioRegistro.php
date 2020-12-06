@@ -20,6 +20,7 @@
         $materno=$_POST['materno'];
         $ocupacion=$_POST['ocupacion'];
         $telefono=$_POST['telefono'];
+        $telefono="img/userPhoto/".$telefono;
         $edad=$_POST['edad'];
         $foto=$_POST['foto'];
 
